@@ -9,15 +9,27 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
 **Comandos principales de MarkDown:**
 
 **TITULOS O ENCABEZADOS**
-    #   Encabezado h1
-    ##  Encabezado h2
+    # Encabezado h1
+    ## Encabezado h2
     ### Encabezado h3
-    ####    Encabezado h4
-    #####   Encabezado h5
-    ######  Encabezado h6
+    #### Encabezado h4
+    ##### Encabezado h5
+    ###### Encabezado h6
+
+$~$
 
 **COMENTARIOS JUNTO AL ELEMENTO**
 
+[comment]: <> (Comentario que debe ir solo)
+[//]: <> (Comentario que debe ir solo)
+[//]: # (Comentario que debe ir solo)
+<!--Comentario que puede ir o no solo-->
+<!--Comentario
+multilínea
+que debe ir solo-->
+
+###### CÓDIGO
+---
     [comment]: <> (Comentario que debe ir solo)
     [//]: <> (Comentario que debe ir solo)
     [//]: # (Comentario que debe ir solo)
@@ -26,35 +38,60 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
     multilínea
     que debe ir solo-->
 
+$~$
+
 **NEGRITA**
 
     **Texto en negrita con asteriscos**  
     __Textos en negrita con barra bajas__
+
+$~$
 
 **CURSIVA**
 
     *Texto en cursiva con asteriscos*  
     _Texto en cursiva con barra bajas_
 
+$~$
+
 **CURSIVA + NEGRITA**
 
     ***Texto en negrita y cursiva con asteriscos***  
      ___Textos en negrita y cursiva con barra bajas___
 
-**CITAS**
+$~$
 
+**CITAS**
+>“¡A mi señal, ira y fuego!🔥” – Máximo Décimo Meridio.
+>"¡A mi señal, ira y fuego!🔥"
+> Máximo Décimo Meridio.
+
+###### CÓDIGO
+--- 
     >“¡A mi señal, ira y fuego!🔥” – Máximo Décimo Meridio.
     >"¡A mi señal, ira y fuego!🔥"
     > Máximo Décimo Meridio.
 
-**LISTAS**
+$~$
 
+**LISTAS**
+- Item 1
+- Item 2
+* Item 3
+* Item 4
++ Item 5
++ Item 6
+
+###### CÓDIGO
+---
     - Item 1
     - Item 2
     * Item 3
     * Item 4
     + Item 5
     + Item 6
+
+$~$
 
 **LISTAS ANIDADAS**
 1. Item 1  
@@ -68,35 +105,39 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
 
 CÓDIGO
 ---
-  1. Item 1  
+    1. Item 1  
       1.1. Subitem 1.1  
       1.2. Subitem 1.2
-  2. Item 2
+    2. Item 2
       * Subitem ded item2
-  * Item 3
+    * Item 3
       * Subitem ded item3
       * Subitem del subitem3
 
-**ENLACES O LINKS**
+$~$
 
-CÓDIGO
+**ENLACES O LINKS**
+<http://google.com/>
+Alternativa: [Ir a Google](http://www.google.es)
+Alternativa 2: [Visitar Google](https://www.google.es "Texto (cuando ponemos el cursor encima)")
+
+###### CÓDIGO
 ---
     <http://google.com/>
     Alternativa: [Ir a Google](http://www.google.es)
     Alternativa 2: [Visitar Google](https://www.google.es "Texto (cuando ponemos el cursor encima)")
 
+$~$
+
 **SUBRAYADO**
 
 ~~ Texto tachado ~~
 
-CÓDIGO
----
-   ~~ Texto tachado ~(sin espacio)~
+$~$
 
- 
 **LINEAS SEPARADORAS O REGLAS HORIZONTALES**  
 
-CÓDIGO
+###### CÓDIGO
 ---
     ## Líneas separadoras escrita sin espacios (se verá igual que la otra)
     Contenido 1
@@ -113,26 +154,45 @@ CÓDIGO
     Contenido 3
     _ _ _
 
+$~$
+
 **IMAGENES** 
 
 ![Este contenido se mostrará cuando la imagen no se pueda cargar, como texto alternativo](https://user-images.githubusercontent.com/32896437/153675215-dff3448c-56bc-4da0-9cf1-6a394fd9c6f8.png "Texto a mostrar cuando nos situamos sobre la imagen.")
 
-CÓDIGO
+###### CÓDIGO
 ---
     ![Este contenido se mostrará cuando la imagen no se pueda cargar, como texto alternativo](https://user-images.githubusercontent.com/32896437/153675215-dff3448c-56bc-4da0-9cf1-6a394fd9c6f8.png "Texto a mostrar cuando nos situamos sobre la imagen. En este caso sería Baile de la película Pulp Fiction")
 
-**CODIGO DE LINEA** 
+$~$
 
-CÓDIGO
+**CODIGO DE LINEA** 
+Etiqueta HTML5: `<!DOCTYPE html>`
+Etiqueta HTML: `<html></html>`
+Etiqueta HEAD: `<head></head>`
+Etiqueta BODY: `<body></body>`
+
+###### CÓDIGO
 ---
     Etiqueta HTML5: `<!DOCTYPE html>`
     Etiqueta HTML: `<html></html>`
     Etiqueta HEAD: `<head></head>`
     Etiqueta BODY: `<body></body>`
 
-**CODIGOS DE BLOQUE**
+$~$
 
-CÓDIGO
+**CODIGOS DE BLOQUE**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+</body>
+</html>
+```
+
+###### CÓDIGO
 ---
     ```
     <!DOCTYPE html>
@@ -143,9 +203,12 @@ CÓDIGO
     </body>
     </html>
     ```
+
+$~$
+
 **CARACTERES ESPECIALES**
 
-CÓDIGO
+###### CÓDIGO
 ---
     `  acento invertido
     *  asterisco
@@ -159,9 +222,17 @@ CÓDIGO
     .  punto
     !  exclamación
 
-**TASK LIST**
+$~$
 
-CÓDIGO
+**TASK LIST**
+###### Task List
+- [ ] Elemento no finalizado  
+- [x] Elemento finalizado
+###### Task List + iconos
+:white_check_mark: Elemento finalizado  
+:x: Elemento finalizado
+
+###### CÓDIGO
 ---
     # Task List
     - [ ] Elemento no finalizado  
@@ -169,6 +240,8 @@ CÓDIGO
     # Task List + iconos
     :white_check_mark: Elemento finalizado  
     :x: Elemento finalizado
+
+$~$
 
 **TABLAS DE CONTENIDO (TOC)**
 
@@ -179,6 +252,8 @@ CÓDIGO
     ##  Elementos en línea VS elementos en bloque
     Phasellus nec libero nisi. Phasellus dignissim quam ac nunc pharetra vehicula. Curabitur vel gravida tortor. In mauris est, cursus nec aliquet sit amet, scelerisque gravida sem. Proin pharetra vitae ex a laoreet. Morbi vitae dictum nulla. Nam fringilla consectetur sapien eu suscipit. Vivamus et ipsum ac augue ullamcorper pulvinar efficitur vitae tortor. Donec efficitur tortor non justo dapibus, luctus mattis est suscipit. Fusce scelerisque mauris sit amet fermentum hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer in risus maximus, commodo turpis vel, tincidunt elit.
 
+$~$
+
 **TABLAS**
 
 |Header |Column 1 | Column 2 | Column 3  |
@@ -187,13 +262,15 @@ CÓDIGO
 |2. Row| left | nicely | right  |
 |3. Row| aligned | centered | aligned  |
 
-CÓDIGO
+###### CÓDIGO
 ---
     |Header |Column 1 | Column 2 | Column 3  |
     |:--- |:---- |:----:| ----:|
     |1. Row| is | is | is  |
     |2. Row| left | nicely | right  |
     |3. Row| aligned | centered | aligned  |
+
+$~$
 
 **MENSAJES DE ADVERTENCIA**
 | :exclamation:  This is very important   |
@@ -207,7 +284,7 @@ CÓDIGO
 |:---------------------------|
 | Will explode when clicked! |
 
-CÓDIGO
+###### CÓDIGO
 ---
     | :exclamation:  This is very important   |
     |-----------------------------------------|
