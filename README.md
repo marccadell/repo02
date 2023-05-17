@@ -56,18 +56,48 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
     + Item 5
     + Item 6
 
+**LISTAS ANIDADAS**
+1. Item 1  
+    1.1. Subitem 1.1  
+    1.2. Subitem 1.2
+2. Item 2
+    * Subitem ded item2
+* Item 3
+    * Subitem ded item3
+    * Subitem del subitem3
+
+CÓDIGO
+---
+  1. Item 1  
+      1.1. Subitem 1.1  
+      1.2. Subitem 1.2
+  2. Item 2
+      * Subitem ded item2
+  * Item 3
+      * Subitem ded item3
+      * Subitem del subitem3
+
 **ENLACES O LINKS**
 
+CÓDIGO
+---
     <http://google.com/>
     Alternativa: [Ir a Google](http://www.google.es)
     Alternativa 2: [Visitar Google](https://www.google.es "Texto (cuando ponemos el cursor encima)")
 
 **SUBRAYADO**
 
-   ~~Texto tachado~~
+~~ Texto tachado ~~
+
+CÓDIGO
+---
+   ~~ Texto tachado ~(sin espacio)~
+
  
 **LINEAS SEPARADORAS O REGLAS HORIZONTALES**  
 
+CÓDIGO
+---
     ## Líneas separadoras escrita sin espacios (se verá igual que la otra)
     Contenido 1
     *** 
@@ -87,12 +117,14 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
 
 ![Este contenido se mostrará cuando la imagen no se pueda cargar, como texto alternativo](https://user-images.githubusercontent.com/32896437/153675215-dff3448c-56bc-4da0-9cf1-6a394fd9c6f8.png "Texto a mostrar cuando nos situamos sobre la imagen.")
 
-    Codigo:
-
+CÓDIGO
+---
     ![Este contenido se mostrará cuando la imagen no se pueda cargar, como texto alternativo](https://user-images.githubusercontent.com/32896437/153675215-dff3448c-56bc-4da0-9cf1-6a394fd9c6f8.png "Texto a mostrar cuando nos situamos sobre la imagen. En este caso sería Baile de la película Pulp Fiction")
 
 **CODIGO DE LINEA** 
 
+CÓDIGO
+---
     Etiqueta HTML5: `<!DOCTYPE html>`
     Etiqueta HTML: `<html></html>`
     Etiqueta HEAD: `<head></head>`
@@ -100,6 +132,8 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
 
 **CODIGOS DE BLOQUE**
 
+CÓDIGO
+---
     ```
     <!DOCTYPE html>
     <html lang="en">
@@ -111,6 +145,8 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
     ```
 **CARACTERES ESPECIALES**
 
+CÓDIGO
+---
     `  acento invertido
     *  asterisco
     _  guión bajo
@@ -125,6 +161,8 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
 
 **TASK LIST**
 
+CÓDIGO
+---
     # Task List
     - [ ] Elemento no finalizado  
     - [x] Elemento finalizado
@@ -143,13 +181,21 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
 
 **TABLAS**
 
+|Header |Column 1 | Column 2 | Column 3  |
+|:--- |:---- |:----:| ----:|
+|1. Row| is | is | is  |
+|2. Row| left | nicely | right  |
+|3. Row| aligned | centered | aligned  |
+
+CÓDIGO
+---
     |Header |Column 1 | Column 2 | Column 3  |
     |:--- |:---- |:----:| ----:|
     |1. Row| is | is | is  |
     |2. Row| left | nicely | right  |
     |3. Row| aligned | centered | aligned  |
 
-**Mensajes de Advertencia**
+**MENSAJES DE ADVERTENCIA**
 | :exclamation:  This is very important   |
 |-----------------------------------------|
 | :zap:        Ignore at your own risk!   |
@@ -161,6 +207,8 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
 |:---------------------------|
 | Will explode when clicked! |
 
+CÓDIGO
+---
     | :exclamation:  This is very important   |
     |-----------------------------------------|
     | :zap:        Ignore at your own risk!   |
@@ -172,7 +220,8 @@ MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesid
     |:---------------------------|
     | Will explode when clicked! |
 
-
+FIN
+---
 
 
 
