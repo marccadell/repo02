@@ -6,15 +6,19 @@
 ### Ejercicio 2.4
 MarkDown basicamente es como una alternativa a HTML, nace a partir de la necesidad de reducir la complejidad a la hora de tomar notas, aportando una mayor legibilidad y una gran versatilidad.
 
+$~$
+
 **Comandos principales de MarkDown:**
 
 **TITULOS O ENCABEZADOS**
-    # Encabezado h1
-    ## Encabezado h2
-    ### Encabezado h3
-    #### Encabezado h4
-    ##### Encabezado h5
-    ###### Encabezado h6
+###### CÓDIGO
+---
+    #--Encabezado h1
+    ##--Encabezado h2
+    ###--Encabezado h3
+    ####--Encabezado h4
+    #####--Encabezado h5
+    ######--Encabezado h6
 
 $~$
 
@@ -103,7 +107,7 @@ $~$
     * Subitem ded item3
     * Subitem del subitem3
 
-CÓDIGO
+###### CÓDIGO
 ---
     1. Item 1  
       1.1. Subitem 1.1  
@@ -117,6 +121,7 @@ CÓDIGO
 $~$
 
 **ENLACES O LINKS**
+$~$
 <http://google.com/>
 Alternativa: [Ir a Google](http://www.google.es)
 Alternativa 2: [Visitar Google](https://www.google.es "Texto (cuando ponemos el cursor encima)")
@@ -131,7 +136,7 @@ $~$
 
 **SUBRAYADO**
 
-~~ Texto tachado ~~
+    ~~ Texto tachado ~~
 
 $~$
 
@@ -167,10 +172,10 @@ $~$
 $~$
 
 **CODIGO DE LINEA** 
-Etiqueta HTML5: `<!DOCTYPE html>`
-Etiqueta HTML: `<html></html>`
-Etiqueta HEAD: `<head></head>`
-Etiqueta BODY: `<body></body>`
+`<!DOCTYPE html>`
+`<html></html>`
+`<head></head>`
+`<body></body>`
 
 ###### CÓDIGO
 ---
